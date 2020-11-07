@@ -77,7 +77,7 @@ scary-block start
 **/
 
 .scary__font-block {
-    background: url(/img/img__scary__block.jpg), url(/img/lighting_scary-block.png);
+    background: url(../img/img__scary__block.jpg), url(../img/lighting_scary-block.png);
     height: 650px;
     background-position: 0% 50%, 100% 5%;
     background-size: 650px, 260px;
@@ -125,7 +125,7 @@ funny-block start
 
 .funny__font-block {
     padding: 155px 0 400px;
-    background-image: url(/img/funny-block_dog__1.png), url(/img/funny-block_dog__2.png), url(/img/funny-block_dog__3.png);
+    background-image: url(../img/funny-block_dog__1.png), url(../img/funny-block_dog__2.png), url(../img/funny-block_dog__3.png);
     background-position: 0% 100%, 50% 100%, 100% 100%;
     background-repeat: no-repeat;
     background-color: #fff;
@@ -162,7 +162,7 @@ angry-block start
 .angry__font-block {
     position: relative;
     padding: 165px 0;
-    background-image: url(/img/angry-block_angryman__1.png), url(/img/angry-block_angryman__2.png), url(/img/angry-block_angryman__3.png);
+    background-image: url(../img/angry-block_angryman__1.png), url(../img/angry-block_angryman__2.png), url(../img/angry-block_angryman__3.png);
     background-position: 50% -35%, 86% 115%, 100% -50%;
     background-repeat: no-repeat;
     color: #fff;
@@ -202,7 +202,7 @@ romantic-block start
 
 .romantic__font-block {
     padding: 140px 0;
-    background-image: url(/img/romantic-block_plant_left.png), url(/img/romantic-block_plant_right.png);
+    background-image: url(../img/romantic-block_plant_left.png), url(../img/romantic-block_plant_right.png);
     background-position: -1% 103%, 100% -20%;
     background-repeat: no-repeat;
     background-size: 101px 303px, 190px 320px;
@@ -253,7 +253,7 @@ bussines-block start
 **/
 
 .business__font-block {
-    background-image: url(/img/business-block_bg.png);
+    background-image: url(../img/business-block_bg.png);
     height: 650px;
     background-size: 593px;
     background-repeat: no-repeat;
