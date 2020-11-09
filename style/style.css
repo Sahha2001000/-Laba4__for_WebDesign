@@ -1,8 +1,10 @@
+/*My fonts*/
+
+@import url(fonts.css);
 /* 
 My settings
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
 html {
     box-sizing: border-box;
 }
@@ -29,7 +31,7 @@ Header start
 }
 
 .container {
-    width: 1230px;
+    max-width: 1230px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -39,9 +41,11 @@ Header start
     justify-content: space-between;
     height: 90px;
     align-items: center;
+    position: relative;
 }
 
 .header__name-student {
+    width: 225px;
     margin-left: 30px;
     font-weight: 700;
     font-size: 16px;
@@ -49,6 +53,21 @@ Header start
     letter-spacing: 0.04em;
     color: #000000;
     text-transform: uppercase;
+}
+
+.btn__div {
+    position: absolute;
+    width: 50px;
+    top: 25px;
+    right: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.btn__div-item {
+    height: 5px;
+    background: #000;
+    margin-bottom: 10px;
 }
 
 .header__menu-list {
@@ -66,6 +85,13 @@ Header start
     font-size: 16px;
     line-height: 160%;
     color: #000000;
+}
+
+.header__menu-link a:hover {
+    padding-right: 20px;
+    border-bottom: 4px solid rgba(94, 94, 94, 0.596);
+    transition: .2s;
+    animation-duration: 2s;
 }
 
 /**
@@ -92,7 +118,7 @@ scary-block start
 
 .scary__font-descr {
     color: #FFFFFF;
-    width: 410px;
+    width: 380px;
     height: 90px;
     position: absolute;
     top: 190px;
@@ -100,6 +126,7 @@ scary-block start
 }
 
 .scary__font-descr__title {
+    font-family: 'Castileo Medium', sans-serif;
     font-weight: 500;
     font-size: 40px;
     line-height: 160%;
@@ -107,6 +134,8 @@ scary-block start
 }
 
 .scary__font-descr__text1, .scary__font-descr__text2 {
+    font-family: "DHFStoryBrush", sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 160%;
 }
@@ -132,6 +161,7 @@ funny-block start
 }
 
 .funny__font-block__title {
+    font-family: "DisneyPark", sans-serif;
     font-weight: 800;
     font-size: 50px;
     line-height: 160%;
@@ -142,7 +172,8 @@ funny-block start
 }
 
 .funny__font-block__descr {
-    width: 535px;
+    font-family: 'FunnyCute', sans-serif;
+    max-width: 535px;
     height: 90px;
     text-align: center;
     margin: 0 auto;
@@ -169,23 +200,23 @@ angry-block start
     background-color: #AD4220;
 }
 
-.angry__font-block__descr {}
-
 .angry__font-block__descr-title {
+    font-family: 'TelegraphLine', sans-serif;
     font-weight: 700;
     font-size: 45px;
     line-height: 160%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
-    width: 368px;
+    max-width: 368px;
     margin-bottom: 35px;
 }
 
 .angry__font-block__descr-text1, .angry__font-block__descr-text2 {
+    font-family: 'AngryBirdsMovie', sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 160%;
-    width: 405px;
+    max-width: 405px;
 }
 
 .angry__font-block__descr-text2 {
@@ -215,29 +246,39 @@ romantic-block start
 }
 
 .romantic__font-block__descr {
-    margin-top: 42px;
-    width: 425px;
+    margin: 42px 40px 0 0;
+    max-width: 425px;
     color: #484848;
 }
 
 .romantic__font-block__descr-title {
+    font-family: 'Romul', sans-serif;
     font-weight: 500;
     font-size: 30px;
     line-height: 160%;
-    /* or 48px */
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-bottom: 35px;
 }
 
 .romantic__font-block__descr-text1, .romantic__font-block__descr-text2 {
+    font-family: 'FallIsComing', sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 19px;
     line-height: 160%;
 }
 
 .romantic__font-block__descr-text2 {
     margin-top: 27px;
+}
+
+.romantic__font-block__descr-img {
+    display: flex;
+}
+
+.romantic__font-block__descr-img1 {
+    margin-right: 63px;
+    margin-left: 45px;
 }
 
 .romantic__font-block__descr-img2 {
@@ -272,6 +313,7 @@ bussines-block start
 }
 
 .business__font-block__title {
+    font-family: 'CopyrightHouse', sans-serif;
     font-weight: 600;
     font-size: 30px;
     line-height: 160%;
@@ -287,14 +329,16 @@ bussines-block start
 }
 
 .business__font-block__descr__text1, .business__font-block__descr__text2 {
-    width: 269px;
+    font-family: 'Pricedown', sans-serif;
+    max-width: 269px;
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
 }
 
 .business__font-block__descr__text-part2 {
-    width: 510px;
+    font-family: 'Primetime', sans-serif;
+    max-width: 510px;
     height: 52px;
     display: flex;
 }
@@ -311,7 +355,6 @@ bussines-block start
     font-weight: 900;
     font-size: 45px;
     line-height: 160%;
-    /* or 72px */
     letter-spacing: 0.05em;
     text-transform: uppercase;
     margin-right: 20px;
@@ -325,8 +368,6 @@ bussines-block end
 /**
 footer-block start
 **/
-
-.footer {}
 
 .footer__remark {
     height: 90px;
